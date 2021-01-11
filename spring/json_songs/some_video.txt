@@ -1,0 +1,1 @@
+{"id":6,"artist":"artist","type":"VIDEO","name":"name","albumName":"album name","year":1999,"albumPictureLink":"https://site.com/album-picture.png","genre":"Rock","durationInSec":300,"linkToVideoFile":"json_songs/some_video.txt"}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.thumbtack.school.notes.mappers.NoteMapper">
+    <resultMap id="selectNotes" type="net.thumbtack.school.notes.model.Note">
+        <id property="id" column="noteId"/>
+        <result column="subject" property="subject"/>
+        <result column="body" property="body"/>
+        <result column="rating" property="rating"/>
+        <result column="subject" property="subject"/>
+        <result column="created" property="created"/>
+
+        <association property="section" javaType="net.thumbtack.school.notes.model.Section">
+            <result property="id" column="revisionId"/>
+            <result property="name" column="sectionName"/>
+        </association>
+
+        <association property="author" javaType="net.thumbtack.school.notes.model.Author">
+            <result property="id" column="authorId"/>
+            <result property="firstName" column="firstName"/>
+            <result property="lastName" column="lastName"/>
+            <result property="patronymic" column="patronymic"/>
+            <result property="login" column="login"/>
+            <result property="password" column="password"/>
+            <result property="rating" column="authorRating"/>
+            <result property="createdNotes" column="createdNotes"/>
+            <result property="timeRegistered" column="timeRegistered"/>
+            <result property="role" column="role"/>
+            <result property="isDeleted" column="isDeleted"/>
+        </association>
+
+        <collection property="revisions" column="id" javaType="java.util.List"
+                    ofType="net.thumbtack.school.notes.model.Revision">
+            <result property="id" column="revisionId"/>
+            <result property="body" column="revisionBody"/>
+            <result property="created" column="revisionCreated"/>
+
+            <collection property="comments" column="commentId" javaType="java.util.List"
+                        ofType="net.thumbtack.school.notes.model.Comment">
+                <result property="id" column="commentId"/>
+                <result property="body" column="commentBody"/>
+                <result property="revisionId" column="commentRevisionId"/>
+                <result property="created" column="commentCreated"/>
+
+                <association property="author" javaType="net.thumbtack.school.notes.model.Author">
+                    <result property="id" column="commentAuthorId"/>
+                    <result property="firstName" column="commentAuthorFirstName"/>
+                    <result property="lastName" column="commentAuthorLastName"/>
+                    <result property="patronymic" column="commentAuthorPatronymic"/>
+                    <result property="login" column="commentAuthorLogin"/>
+                    <result property="password" column="commentAuthorPassword"/>
+                    <result property="rating" column="commentAuthorRating"/>
+                    <result property="createdNotes" column="commentAuthorCreatedNotes"/>
+                    <result property="timeRegistered" column="commentAuthorRegistered"/>
+                    <result property="role" column="commentAuthorRole"/>
+                    <result property="isDeleted" column="commentAuthorIsDeleted"/>
+                </association>
+
+            </collection>
+        </collection>
+    </resultMap>
+</mapper>

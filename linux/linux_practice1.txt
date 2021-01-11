@@ -1,0 +1,181 @@
+Занятие 1 
+
+Командная строка
+В своём домашнем каталоге создать подкаталог linux_ex и зайти в него.
+cd ~
+mkdir linux_ex
+cd linux_ex/
+touch hello.txt
+
+Добавить в этот файл (разделяя пустыми строками)
+1. Cвои имя и фамилию:
+echo -e Vadim Panchenko\n >> hello.txt 
+
+Прим.: echo -e \n >> hello.txt - для разделения заданий пустыми строками
+
+2. Текущую дату:
+date >> hello.txt; echo -e \n >> hello.txt 
+
+3. Имя пользователя:
+whoami >> hello.txt; echo -e \n >> hello.txt 
+
+4. Содержимое домашнего каталога (нерекурсивно, список имен файлов, включая скрытые):
+ls -a ~/ >> hello.txt; echo -e \n >> hello.txt 
+
+5. Cодержимое корневого каталога (нерекурсивно):
+ls / >> hello.txt; echo -e \n >> hello.txt 
+
+6. Содержимое каталога /etc:
+ls /etc >> hello.txt; echo -e \n >> hello.txt 
+
+7. Только файлы в каталоге /etc:
+find /etc/ -maxdepth 1 -type f >> hello.txt; echo -e \n >> hello.txt
+
+8. Только подкаталоги в каталоге /etc нерекурсивно):
+ls -d /etc/*/; echo -e \n >> hello.txt 
+
+9. Содержимое файла /etc/passwd:
+cat /etc/passwd >> hello.txt; echo -e \n >> hello.txt
+
+10. Первый столбец файла /etc/passwd:
+cut -f1 -d: /etc/passwd >> hello.txt; echo -e \n >> hello.txt
+
+11. Содержимое файла /etc/group: 
+cat /etc/group >> hello.txt; echo -e \n >> hello.txt 
+
+12. Первый столбец файла /etc/group
+cut -f1 -d: /etc/group >> hello.txt
+
+13. Первую и последнюю строки файла /etc/group
+head -n1 /etc/group | tail -n1 /etc/group >> hello.txt
+
+Вывести hello.txt с прокруткой
+less hello.txt
+
+Разбить hello.txt на файлы размером 1к, затем собрать обратно.
+split -b 1K hello.txt
+cat x* > hello.txt (Так как файлы начинаются с буквы x)
+
+Заменить в hello.txt ‘/’ на ‘\’
+Вариант 1 
+cp hello.txt hello2.txt
+tr "/" "\\" < hello2.txt > hello.txt
+rm hello2.txt
+(вывод и ввод в тот же файл стирал всё содержимое)
+
+Вариант 2
+sed -i 's#/#\\#g' hello2.txt
+
+Скопировать /var/log в текущий каталог (кроме файлов без доступа) с сохранением времени модификации. В текущем каталоге должен появиться ./var/log
+mkdir var
+cp -r /var/log ./var/ 2> /dev/null (2> /dev/null для того чтобы не выводить ошибки доступа на экран)
+
+Вывести объем занимаемого места
+du -sh ./var/log/
+
+Вывести все файлы, начинающиеся на ‘a’ (не каталоги)
+find ./var/log/ -type f -name a*
+
+Удалить все файлы, начинающиеся на ‘a’ 
+find ./var/log/ -type f -name a* -exec rm {} \;
+
+Проверка: 
+find ./var/log/ -type f -name a* (После успешного удаления вывод команды должен быть пустым)
+
+Вывести все файлы со временем последней модификации больше 5 дней:
+find ./var/log/ -mtime +5
+
+Вывести все файлы со временем последней модификации меньше 5 дней:
+find ./var/log/ -mtime -5
+
+Cоздать каталог archive и переместить туда файлы (не каталоги) со временем модификации больше 5 дней.  
+mkdir archive
+find ./var/log/ -mtime +5 -type f -exec cp {} ./archive/ \;
+find ... -delete
+
+* Переместить файлы как в прошлом задании, но сохраняя структуру каталогов:
+find ./var/log/ -mtime +5 -exec cp -r --parents {} ./archive/ \; (для того чтобы сохранить структуру используем флаг --parents)
+find ... -delete
+
+Найти все файлы (рекурсивно) с расширением jar в каталогах /opt и /usr:
+find /usr /opt -name "*.jar"
+
+Найти все каталоги, содержащие файлы с расширением jar в каталогах /opt и /usr, вывести по одному разу:
+find /usr /opt -name "*.jar" | xargs -d'\n' dirname | sort | uniq (находим, разделяем \n и используем команду uniq)
+
+Найти все файлы с расширением java, созданные месяц назад плюс-минус одна неделя.
+find / -name "*.java" -mtime +23 -mtime +38 (от 23 до 38 дней назад)
+
+В двух заданных каталогах должен быть одинаковый набор файлов. Нужно в этом убедиться, т.е. проверить, что совпадают множества файлов, имена и содержимое.
+diff -r newDir oldDir
+
+Создать с помощью touch несколько файлов 1.MP3, 2.MP3… Написать команду для группового переименования расширений в нижний регистр, т.е. должно получиться 1.mp3, 2.mp3...
+sudo apt install rename
+rename -f 's/.MP3/.mp3/' *.MP3
+
+Создать текстовый файл с каким либо русским текстом. Написать команду для его транслитерации.
+touch text.txt
+echo "съешь еще этих мягких булочек да выпей чаю, СЪЕШЬ ЕЩЕ ЭТИХ МЯГКИХ БУЛОЧЕК ДА ВЫПЕЙ ЧАЮ" > text.txt
+sed -i "y/абвгдеёзийклмнопрстуфхъьыАБВГДЕЁЗИЙКЛМНОПРСТУФХЪЬЫ/abvgdeezijklmnoprstufh\"'yABVGDEEZIJKLMNOPRSTUFH\"'Y/; s/ж/zh/g; s/ш/sh/g; s/ч/ch/g; s/щ/sch/g; s/ю/yu/g; s/я/ya/g; s/э/e/g; s/Ж/ZH/g; s/Ш/SH/g; s/Ч/CH/g; s/Щ/SCH/g; s/Ю/YU/g; s/Я/YA/g; s/Э/E/g" text.txt
+
+Output:
+s"esh' esche etih myagkih bulochek da vypej chayu, S"ESH' ESCHE ETIH MYAGKIH BULOCHEK DA VYPEJ CHAYU
+
+
+Установить вручную (без apt-get) java и maven последней версии:
+wget https://clck.ru/Qg6LM  -O ~/Downloads/jdk14.tar.gz 
+wget https://goo-gl.ru/6znP -O ~/Downloads/mvn3.6.3.tar.gz
+sudo tar xzvf ~/Downloads/jdk14.tar.gz
+sudo tar xzvf ~/Downloads/mvn3.6.3.tar.gz
+
+Добавить путь запуска в переменную PATH, создать переменные JAVA_HOME и M2_HOME. 
+sudo su (чтобы не заходить в редактор)
+echo export JAVA_HOME=/opt/jdk-14.0.2 >> /etc/bash.bashrc
+echo export M2_HOME=/opt/apache-maven-3.6.3 >> /etc/bash.bashrc
+echo export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH >> /etc/bash.bashrc
+exit
+
+Выполнить сборку java проекта:
+cd ~/Thumbtack/thumbtack_online_school_2020_1_vadim_panchenko/
+mvn clean compile test
+
+Проанализировать загрузку процессора, объем памяти:
+top
+
+Вывести информацию по использованию места в файловой системе:
+df -h
+
+Найти самые большие каталоги (рекурсивно до уровня 2)
+find / -maxdepth 2 -mount -type f -ls 2> /dev/null | sort -rnk7 | head -2 (2> /dev/null для того чтобы не выводить ошибки доступа на экран)
+
+Users, groups, access rights
+Создать двух юзеров (напр., ivanov, petrov): 
+sudo adduser --no-create-home ivanov
+sudo adduser --no-create-home petrov
+sudo addgroup friends
+sudo gpasswd -a ivanov friends
+sudo gpasswd -a petrov friends
+
+Дать полный доступ этим двум юзерам
+sudo chown -R ivanov:friends /shared
+sudo chmod 770 /shared
+
+Named pipe (именованный канал)
+
+Установить MySQL и создать базу ttschool, заполнить данными. 
+sudo apt update
+sudo apt install mysql-server mysql-client
+sudo mysql_secure_installation
+mysql -u root -p (После всех настроек)
+source ~/Documents/ttschool.sql
+INSERT into trainee VALUES (NULL, "Ivan", "Ivanov", 5, NULL);
+INSERT into trainee VALUES (NULL, "Ivan", "Petrov", 5, NULL);
+\q
+
+Выполнить дамп базы с архивированием в файл посредством named pipe, затем восстановить из файла также посредством named pipe.
+mkfifo mysql_pipe
+gzip < mysql_pipe > ttschool_dump.gz & mysqldump -u root -p ttschool > mysql_pipe
+gunzip -c ttschool_dump.gz > mysql_pipe & mysql -v -u root -p ttschool < mysql_pipe
+rm mysql_pipe
+
+

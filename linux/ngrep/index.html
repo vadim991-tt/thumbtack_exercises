@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Thumbtack School </title>
+</head>
+<body>
+<h1><font color="green"> Thumbtack School </font></h1>
+
+<img src="https://i.imgur.com/8NSwQBf.png">
+<br>
+<form method="POST" name="authorization" action="http://example.com/profile.php">
+    Логин: <input type="text" name="username"><br>
+    Пароль: <input type="password" name="user_password"><br>
+    <input type="submit" value="Войти">
+</form>
+<form method="GET" name="filter" action="http://example.com/catalog/">
+    <p>Какой у вас профиль подготовки?</p>
+    <label><input type="radio" name="profile" value="Backend" checked>Backend </label><br>
+    <label><input type="radio" name="profile" value="Frontend">Frontend </label><br>
+    <label><input type="radio" name="profile" value="Fullstack">Fullstack</label>
+    <p>Кем вы являетесь?</p>
+    <label><input type="checkbox" name="person_student" checked> Студент</label><br>
+    <label><input type="checkbox" name="person_software_engineer" checked> Программист</label><br>
+    <label><input type="checkbox" name="person_teacher"> Преподаватель</label><br>
+    <input type="submit" value="Применить фильтр">
+</form>
+<p><a href="https://i.imgur.com/8NSwQBf.png">Открыть картинку с космонавтом в браузере</a>
+<p><a href="fileFromServer.txt" download="" title="">Скачать файл с сервера</a>
+    <form enctype="multipart/form-data" method="post">
+<p>Загрузите ваши фотографии на сервер</p>
+<p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+    <input type="submit" value="Отправить"></p>
+</form>
+<p><font color="green"> This page was hosted by NGINX </font></p>
+<p><font color="green"> And it's working </font></p>
+</body>
+
+
+<SCRIPT language="JavaScript">
+<!--
+
+function set_cookie ( name, value, expires_year, expires_month, expires_day, path, domain, secure )
+{
+  var cookie_string = name + "=" + escape ( value );
+
+  if ( expires_year )
+  {
+    var expires = new Date ( expires_year, expires_month, expires_day );
+    cookie_string += "; expires=" + expires.toGMTString();
+  }
+
+  if ( path )
+	cookie_string += "; path=" + escape ( path );
+
+  if ( domain )
+	cookie_string += "; domain=" + escape ( domain );
+
+  if ( secure )
+	cookie_string += "; secure";
+
+  document.cookie = cookie_string;
+
+}
+
+function delete_cookie ( cookie_name )
+{
+  var cookie_date = new Date ( );  
+  cookie_date.setTime ( cookie_date.getTime() - 1 );
+  document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+}
+
+function get_cookie ( cookie_name )
+{
+  var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+
+  if ( results )
+    return ( unescape ( results[2] ) );
+  else
+    return null;
+}
+
+if ( ! get_cookie ( "username" ) )
+{
+  var username = prompt ( "Пожалуйста, ведите Ваше имя (проверка куки)", "" );
+
+  if ( username )
+  {
+    var current_date = new Date;
+    var cookie_year = current_date.getFullYear ( ) + 1;
+    var cookie_month = current_date.getMonth ( );
+    var cookie_day = current_date.getDate ( );
+    set_cookie ( "username", username, cookie_year, cookie_month, cookie_day );
+    document.location.reload( );
+  }
+}
+else
+{
+  var username = get_cookie ( "username" );
+  document.write ( "Привет, " + username + ", добро пожаловать на сайт!" );
+  document.write ( "<br><a href=\"javascript:delete_cookie('username'); document.location.reload( );\">Забудь обо мне!</a>" );
+}
+
+// -->
+
+</SCRIPT>
+</html>

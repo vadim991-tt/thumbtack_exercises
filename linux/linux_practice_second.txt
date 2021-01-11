@@ -1,0 +1,101 @@
+Занятие 2
+tar -xzvf WebHelloWorld.tar.gz
+cd ./WebHelloWorld/
+mvn clean compile package
+scp WebHelloWorld.jar vadim@192.168.56.102:/home/vadim
+
+SSH
+Запустить две виртуальные машины, созданные ранее, зайти по ssh из WORKSTATION на SERVER. 
+ssh vadim@192.168.56.102
+exit
+
+Cгенерировать пару ключей и настроить по ним доступ.
+ssh-keygen -t rsa
+
+Приватный ключ защитить паролем. 
+Enter passphrase (empty for no passphrase): ...
+
+Настройка доступа по ключам:
+cd ~/.ssh
+ssh-copy-id -i id_rsa.pub vadim@192.168.56.101
+
+После настройки доступа по ключам отключите доступ по паролю.
+ssh vadim@192.168.56.102
+sudo nano /etc/ssh/sshd_config
+	PasswordAuthentication yes -> PasswordAuthentication no
+exit
+
+Установка сервиса на удаленной машине
+Установка джавы:
+ssh vadim@192.168.56.102 
+wget https://clck.ru/Qg6LM  -O ~/jdk14.tar.gz 
+cd /opt
+sudo tar xzvf ~/jdk14.tar.gz
+
+Выполнить с помощью команды screen: 
+screen -S "WebWorld"
+java -jar WebHelloWorld.jar
+Ctrl-A d (свернул экран)
+
+Выполнить в виде службы systemd:
+cd /etc/systemd/system/
+sudo touch helloworld.service
+sudo nano helloworld.service               
+	-> ExecStart=/opt/jdk-14.0.2/bin/java -jar /opt/HelloWorldServer/WebHelloWorld.jar                 
+
+sudo systemctl daemon-reload
+sudo systemctl enable helloworld.service
+sudo systemctl status helloworld -> Active: active (running)
+sudo journalctl -u helloworld (Есть информация о запросах)
+
+Сетевые утилиты.
+Установить web сервер nginx
+sudo apt update & sudo apt install 
+....
+Подробный анализ и html страница находятся в папке ngrep
+
+SSH Туннель
+
+На сервере:
+ssh vadim@192.168.56.102
+sudo iptables -A INPUT -p tcp --dport 3306 -j REJECT
+sudo iptables-save
+sudo nano /etc/ssh/sshd_config
+	-> AllowTcpForwarding yes
+
+На клиенте:
+systemctl stop mysql (чтобы освободить порт 3306)
+sudo ssh -L 3306:localhost:3306 vadim@192.168.56.102 -N -v
+mysql -u vadim -p -P 3306 -h 127.0.0.1 -> зашёл на удаленную бд
+(Аналогично доступен вход через mysql workbench)
+P.S. При закрытии туннеля, связь теряется
+
+Проброс авторизации и создание туннеля через промежуточный узел
+
+Проброс авторизации
+На сервере: 
+sudo iptables -A INPUT -i enp0s8 -p tcp  ! -s 192.168.56.101 --dport 22 -j DROP // Закрыл доступ всем кроме Gateway
+sudo iptables -A INPUT -p tcp --dport 3306 -j REJECT
+sudo iptables-save
+
+На клиенте:
+(ssh-agent -s) && ssh-add ~/.ssh/id_rsa // Добавил ключ в ssh агента
+ssh -A -tt vadim@192.168.56.101 ssh vadim@192.168.56.102 // Авторизировался
+
+
+Создание туннеля через промежуточный узел.
+Так как порт 3306 на сервере закрыт:
+
+1. vadim@vadim-VB:~$ ssh -L 3306:localhost:3306 vadim@192.168.56.101 - пробрасываем порт на GATEWAY и заходим в него.
+	1. 1. sudo nano /etc/ssh/sshd_config -> AllowTcpForwarding yes
+2. vadim@GATEWAY:~$ ssh -L -N 3306:localhost:3306 vadim@192.168.56.102 - пробрасываем порт с GATEWAY на сервер.
+
+На клиенте:
+mysql -u vadim -p -P 3306 -h 127.0.0.1 -> зашёл на удаленную бд
+(Аналогично доступен вход через mysql workbench)
+P.S. При закрытии туннеля, связь теряется
+
+Созданние туннеля через промежуточный узел с открытым портом 3306 между GATEWAY и SERVER:
+После открытия порта на сервере:
+ssh -L 127.0.0.1:3306:192.168.56.102:3306 vadim@192.168.56.101 -N -v
+mysql -u vadimDB -p -h 127.0.0.1 -P 3306 -> зашёл на удаленную бд

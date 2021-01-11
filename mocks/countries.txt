@@ -1,0 +1,984 @@
+Abidjan
+Country not found
+
+Abu Dhabi
+name: United Arab Emirates
+currencies: [code: AED, name: United Arab Emirates dirham, symbol: د.إ]
+
+Abuja
+name: Nigeria
+currencies: [code: NGN, name: Nigerian naira, symbol: ₦]
+
+Accra
+name: Ghana
+currencies: [code: GHS, name: Ghanaian cedi, symbol: ₵]
+
+Adamstown
+name: Pitcairn
+currencies: [code: NZD, name: New Zealand dollar, symbol: $, code: null, name: Pitcairn Islands dollar, symbol: $]
+
+Addis Ababa
+name: Ethiopia
+currencies: [code: ETB, name: Ethiopian birr, symbol: Br]
+
+Aden
+Country not found
+
+Algiers
+name: Algeria
+currencies: [code: DZD, name: Algerian dinar, symbol: د.ج]
+
+Alofi
+name: Niue
+currencies: [code: NZD, name: New Zealand dollar, symbol: $, code: (none), name: Niue dollar, symbol: $]
+
+Amman
+name: Jordan
+currencies: [code: JOD, name: Jordanian dinar, symbol: د.ا]
+
+Amsterdam
+name: Netherlands
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Andorra la Vella
+name: Andorra
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Ankara
+name: Turkey
+currencies: [code: TRY, name: Turkish lira, symbol: null]
+
+Antananarivo
+name: Madagascar
+currencies: [code: MGA, name: Malagasy ariary, symbol: Ar]
+
+Apia
+name: Samoa
+currencies: [code: WST, name: Samoan tālā, symbol: T]
+
+Ashgabat
+name: Turkmenistan
+currencies: [code: TMT, name: Turkmenistan manat, symbol: m]
+
+Asmara
+name: Eritrea
+currencies: [code: ERN, name: Eritrean nakfa, symbol: Nfk]
+
+Asunción
+name: Paraguay
+currencies: [code: PYG, name: Paraguayan guaraní, symbol: ₲]
+
+Athens
+name: Greece
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Avarua
+name: Cook Islands
+currencies: [code: NZD, name: New Zealand dollar, symbol: $, code: CKD, name: Cook Islands dollar, symbol: $]
+
+Baghdad
+name: Iraq
+currencies: [code: IQD, name: Iraqi dinar, symbol: ع.د]
+
+Baku
+name: Azerbaijan
+currencies: [code: AZN, name: Azerbaijani manat, symbol: null]
+
+Bamako
+name: Mali
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+Bandar Seri Begawan
+name: Brunei Darussalam
+currencies: [code: BND, name: Brunei dollar, symbol: $, code: SGD, name: Singapore dollar, symbol: $]
+
+Bangkok
+name: Thailand
+currencies: [code: THB, name: Thai baht, symbol: ฿]
+
+Bangui
+name: Central African Republic
+currencies: [code: XAF, name: Central African CFA franc, symbol: Fr]
+
+Banjul
+name: Gambia
+currencies: [code: GMD, name: Gambian dalasi, symbol: D]
+
+Basseterre
+name: Saint Kitts and Nevis
+currencies: [code: XCD, name: East Caribbean dollar, symbol: $]
+
+Beijing
+name: China
+currencies: [code: CNY, name: Chinese yuan, symbol: ¥]
+
+Beirut
+name: Lebanon
+currencies: [code: LBP, name: Lebanese pound, symbol: ل.ل]
+
+Belgrade
+name: Serbia
+currencies: [code: RSD, name: Serbian dinar, symbol: дин.]
+
+Belize City
+Country not found
+
+Belmopan
+name: Belize
+currencies: [code: BZD, name: Belize dollar, symbol: $]
+
+Berlin
+name: Germany
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Bern
+name: Switzerland
+currencies: [code: CHF, name: Swiss franc, symbol: Fr]
+
+Bishkek
+name: Kyrgyzstan
+currencies: [code: KGS, name: Kyrgyzstani som, symbol: с]
+
+Bissau
+name: Guinea-Bissau
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+Bloemfontein
+Country not found
+
+Bogotá
+name: Colombia
+currencies: [code: COP, name: Colombian peso, symbol: $]
+
+Brades Estate
+Country not found
+
+Brasília
+name: Brazil
+currencies: [code: BRL, name: Brazilian real, symbol: R$]
+
+Bratislava
+name: Slovakia
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Brazzaville
+name: Congo
+currencies: [code: XAF, name: Central African CFA franc, symbol: Fr]
+
+Bridgetown
+name: Barbados
+currencies: [code: BBD, name: Barbadian dollar, symbol: $]
+
+Brussels
+name: Belgium
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Bucharest
+name: Romania
+currencies: [code: RON, name: Romanian leu, symbol: lei]
+
+Budapest
+name: Hungary
+currencies: [code: HUF, name: Hungarian forint, symbol: Ft]
+
+Buenos Aires
+name: Argentina
+currencies: [code: ARS, name: Argentine peso, symbol: $]
+
+Bujumbura
+name: Burundi
+currencies: [code: BIF, name: Burundian franc, symbol: Fr]
+
+Cairo
+name: Egypt
+currencies: [code: EGP, name: Egyptian pound, symbol: £]
+
+Canberra
+name: Australia
+currencies: [code: AUD, name: Australian dollar, symbol: $]
+
+Cape Town
+Country not found
+
+Caracas
+name: Venezuela (Bolivarian Republic of)
+currencies: [code: VEF, name: Venezuelan bolívar, symbol: Bs F]
+
+Castries
+name: Saint Lucia
+currencies: [code: XCD, name: East Caribbean dollar, symbol: $]
+
+Cetinje
+Country not found
+
+Charlotte Amalie
+name: Virgin Islands (U.S.)
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+Chișinău
+name: Moldova (Republic of)
+currencies: [code: MDL, name: Moldovan leu, symbol: L]
+
+Cockburn Town
+name: Turks and Caicos Islands
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+Colombo
+name: Sri Lanka
+currencies: [code: LKR, name: Sri Lankan rupee, symbol: Rs]
+
+Conakry
+name: Guinea
+currencies: [code: GNF, name: Guinean franc, symbol: Fr]
+
+Copenhagen
+name: Denmark
+currencies: [code: DKK, name: Danish krone, symbol: kr]
+
+Cotonou
+Country not found
+
+Dakar
+name: Senegal
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+Damascus
+name: Syrian Arab Republic
+currencies: [code: SYP, name: Syrian pound, symbol: £]
+
+Dar es Salaam
+Country not found
+
+Dhaka
+name: Bangladesh
+currencies: [code: BDT, name: Bangladeshi taka, symbol: ৳]
+
+Dili
+name: Timor-Leste
+currencies: [code: USD, name: United States dollar, symbol: $, code: null, name: null, symbol: null]
+
+Djibouti
+name: Djibouti
+currencies: [code: DJF, name: Djiboutian franc, symbol: Fr]
+
+Dodoma
+name: Tanzania,  United Republic of
+currencies: [code: TZS, name: Tanzanian shilling, symbol: Sh]
+
+Doha
+name: Qatar
+currencies: [code: QAR, name: Qatari riyal, symbol: ر.ق]
+
+Douglas
+name: Isle of Man
+currencies: [code: GBP, name: British pound, symbol: £, code: IMP[G]
+
+Dublin
+name: Ireland
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Dushanbe
+name: Tajikistan
+currencies: [code: TJS, name: Tajikistani somoni, symbol: ЅМ]
+
+El Aaiún
+name: Western Sahara
+currencies: [code: MAD, name: Moroccan dirham, symbol: د.م., code: DZD, name: Algerian dinar, symbol: د.ج]
+
+Flying Fish Cove
+name: Christmas Island
+currencies: [code: AUD, name: Australian dollar, symbol: $]
+
+Freetown
+name: Sierra Leone
+currencies: [code: SLL, name: Sierra Leonean leone, symbol: Le]
+
+Funafuti
+name: Tuvalu
+currencies: [code: AUD, name: Australian dollar, symbol: $, code: TVD[G]
+
+Gaborone
+name: Botswana
+currencies: [code: BWP, name: Botswana pula, symbol: P]
+
+George Town
+name: Cayman Islands
+currencies: [code: KYD, name: Cayman Islands dollar, symbol: $]
+
+Georgetown
+name: Guyana
+currencies: [code: GYD, name: Guyanese dollar, symbol: $]
+
+Gibraltar
+name: Gibraltar
+currencies: [code: GIP, name: Gibraltar pound, symbol: £]
+
+Gitega
+Country not found
+
+Guatemala City
+name: Guatemala
+currencies: [code: GTQ, name: Guatemalan quetzal, symbol: Q]
+
+Gustavia
+name: Saint Barthélemy
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Hagåtña
+name: Guam
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+Hamilton
+name: Bermuda
+currencies: [code: BMD, name: Bermudian dollar, symbol: $]
+
+Hanoi
+name: Viet Nam
+currencies: [code: VND, name: Vietnamese đồng, symbol: ₫]
+
+Harare
+name: Zimbabwe
+currencies: [code: BWP, name: Botswana pula, symbol: P, code: GBP, name: British pound, symbol: £, code: CNY, name: Chinese yuan, symbol: ¥, code: EUR, name: Euro, symbol: €, code: INR, name: Indian rupee, symbol: ₹, code: JPY, name: Japanese yen, symbol: ¥, code: ZAR, name: South African rand, symbol: Rs, code: USD, name: United States dollar, symbol: $, code: (none), name: null, symbol: null]
+
+Hargeisa
+Country not found
+
+Havana
+name: Cuba
+currencies: [code: CUC, name: Cuban convertible peso, symbol: $, code: CUP, name: Cuban peso, symbol: $]
+
+Helsinki
+name: Finland
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Honiara
+name: Solomon Islands
+currencies: [code: SBD, name: Solomon Islands dollar, symbol: $]
+
+Islamabad
+name: Pakistan
+currencies: [code: PKR, name: Pakistani rupee, symbol: ₨]
+
+Jakarta
+name: Indonesia
+currencies: [code: IDR, name: Indonesian rupiah, symbol: Rp]
+
+Jamestown
+name: Saint Helena,  Ascension and Tristan da Cunha
+currencies: [code: SHP, name: Saint Helena pound, symbol: £]
+
+Jerusalem
+name: Israel
+currencies: [code: ILS, name: Israeli new shekel, symbol: ₪]
+
+Juba
+name: South Sudan
+currencies: [code: SSP, name: South Sudanese pound, symbol: £]
+
+Kabul
+name: Afghanistan
+currencies: [code: AFN, name: Afghan afghani, symbol: ؋]
+
+Kampala
+name: Uganda
+currencies: [code: UGX, name: Ugandan shilling, symbol: Sh]
+
+Kathmandu
+name: Nepal
+currencies: [code: NPR, name: Nepalese rupee, symbol: ₨]
+
+Khartoum
+name: Sudan
+currencies: [code: SDG, name: Sudanese pound, symbol: ج.س.]
+
+Kiev
+name: Ukraine
+currencies: [code: UAH, name: Ukrainian hryvnia, symbol: ₴]
+
+Kigali
+name: Rwanda
+currencies: [code: RWF, name: Rwandan franc, symbol: Fr]
+
+King Edward Point
+name: South Georgia and the South Sandwich Islands
+currencies: [code: GBP, name: British pound, symbol: £, code: (none), name: null, symbol: £]
+
+Kingston
+name: Jamaica
+currencies: [code: JMD, name: Jamaican dollar, symbol: $]
+
+Kingstown
+name: Saint Vincent and the Grenadines
+currencies: [code: XCD, name: East Caribbean dollar, symbol: $]
+
+Kinshasa
+name: Congo (Democratic Republic of the)
+currencies: [code: CDF, name: Congolese franc, symbol: Fr]
+
+Kuala Lumpur
+name: Malaysia
+currencies: [code: MYR, name: Malaysian ringgit, symbol: RM]
+
+Kuwait City
+name: Kuwait
+currencies: [code: KWD, name: Kuwaiti dinar, symbol: د.ك]
+
+La Paz
+Country not found
+
+Libreville
+name: Gabon
+currencies: [code: XAF, name: Central African CFA franc, symbol: Fr]
+
+Lilongwe
+name: Malawi
+currencies: [code: MWK, name: Malawian kwacha, symbol: MK]
+
+Lima
+name: Peru
+currencies: [code: PEN, name: Peruvian sol, symbol: S/.]
+
+Lisbon
+name: Portugal
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Ljubljana
+name: Slovenia
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Lobamba
+name: Swaziland
+currencies: [code: SZL, name: Swazi lilangeni, symbol: L]
+
+Lomé
+name: Togo
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+London
+name: United Kingdom of Great Britain and Northern Ireland
+currencies: [code: GBP, name: British pound, symbol: £]
+
+Luanda
+name: Angola
+currencies: [code: AOA, name: Angolan kwanza, symbol: Kz]
+
+Lusaka
+name: Zambia
+currencies: [code: ZMW, name: Zambian kwacha, symbol: ZK]
+
+Luxembourg
+name: Luxembourg
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Madrid
+name: Spain
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Majuro
+name: Marshall Islands
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+Malabo
+name: Equatorial Guinea
+currencies: [code: XAF, name: Central African CFA franc, symbol: Fr]
+
+Malé
+name: Maldives
+currencies: [code: MVR, name: Maldivian rufiyaa, symbol: .ރ]
+
+Managua
+name: Nicaragua
+currencies: [code: NIO, name: Nicaraguan córdoba, symbol: C$]
+
+Manama
+name: Bahrain
+currencies: [code: BHD, name: Bahraini dinar, symbol: .د.ب]
+
+Manila
+name: Philippines
+currencies: [code: PHP, name: Philippine peso, symbol: ₱]
+
+Maputo
+name: Mozambique
+currencies: [code: MZN, name: Mozambican metical, symbol: MT]
+
+Marigot
+name: Saint Martin (French part)
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Maseru
+name: Lesotho
+currencies: [code: LSL, name: Lesotho loti, symbol: L, code: ZAR, name: South African rand, symbol: R]
+
+Mata-Utu
+name: Wallis and Futuna
+currencies: [code: XPF, name: CFP franc, symbol: Fr]
+
+Mbabane
+Country not found
+
+Mexico City
+name: Mexico
+currencies: [code: MXN, name: Mexican peso, symbol: $]
+
+Minsk
+name: Belarus
+currencies: [code: BYN, name: New Belarusian ruble, symbol: Br, code: BYR, name: Old Belarusian ruble, symbol: Br]
+
+Mogadishu
+name: Somalia
+currencies: [code: SOS, name: Somali shilling, symbol: Sh]
+
+Monaco
+name: Monaco
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Monrovia
+name: Liberia
+currencies: [code: LRD, name: Liberian dollar, symbol: $]
+
+Montevideo
+name: Uruguay
+currencies: [code: UYU, name: Uruguayan peso, symbol: $]
+
+Moroni
+name: Comoros
+currencies: [code: KMF, name: Comorian franc, symbol: Fr]
+
+Moscow
+name: Russian Federation
+currencies: [code: RUB, name: Russian ruble, symbol: ₽]
+
+Muscat
+name: Oman
+currencies: [code: OMR, name: Omani rial, symbol: ر.ع.]
+
+N'Djamena
+name: Chad
+currencies: [code: XAF, name: Central African CFA franc, symbol: Fr]
+
+Nairobi
+name: Kenya
+currencies: [code: KES, name: Kenyan shilling, symbol: Sh]
+
+Nassau
+name: Bahamas
+currencies: [code: BSD, name: Bahamian dollar, symbol: $]
+
+Naypyidaw
+name: Myanmar
+currencies: [code: MMK, name: Burmese kyat, symbol: Ks]
+
+New Delhi
+name: India
+currencies: [code: INR, name: Indian rupee, symbol: ₹]
+
+Ngerulmud
+name: Palau
+currencies: [code: (none), name: [E]
+
+Niamey
+name: Niger
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+Nicosia
+name: Cyprus
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Nouakchott
+name: Mauritania
+currencies: [code: MRO, name: Mauritanian ouguiya, symbol: UM]
+
+Nouméa
+name: New Caledonia
+currencies: [code: XPF, name: CFP franc, symbol: Fr]
+
+Nukuʻalofa
+Country not found
+
+Nur-Sultan
+Country not found
+
+Nuuk
+name: Greenland
+currencies: [code: DKK, name: Danish krone, symbol: kr]
+
+Oranjestad
+name: Aruba
+currencies: [code: AWG, name: Aruban florin, symbol: ƒ]
+
+Oslo
+name: Norway
+currencies: [code: NOK, name: Norwegian krone, symbol: kr]
+
+Ottawa
+name: Canada
+currencies: [code: CAD, name: Canadian dollar, symbol: $]
+
+Ouagadougou
+name: Burkina Faso
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+Pago Pago
+name: American Samoa
+currencies: [code: USD, name: United State Dollar, symbol: $]
+
+Palikir
+name: Micronesia (Federated States of)
+currencies: [code: null, name: [D]
+
+Panama City
+name: Panama
+currencies: [code: PAB, name: Panamanian balboa, symbol: B/., code: USD, name: United States dollar, symbol: $]
+
+Papeete
+name: French Polynesia
+currencies: [code: XPF, name: CFP franc, symbol: Fr]
+
+Paramaribo
+name: Suriname
+currencies: [code: SRD, name: Surinamese dollar, symbol: $]
+
+Paris
+name: France
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Philipsburg
+name: Sint Maarten (Dutch part)
+currencies: [code: ANG, name: Netherlands Antillean guilder, symbol: ƒ]
+
+Phnom Penh
+name: Cambodia
+currencies: [code: KHR, name: Cambodian riel, symbol: ៛, code: USD, name: United States dollar, symbol: $]
+
+Plymouth
+name: Montserrat
+currencies: [code: XCD, name: East Caribbean dollar, symbol: $]
+
+Podgorica
+name: Montenegro
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Port Louis
+name: Mauritius
+currencies: [code: MUR, name: Mauritian rupee, symbol: ₨]
+
+Port Moresby
+name: Papua New Guinea
+currencies: [code: PGK, name: Papua New Guinean kina, symbol: K]
+
+Port of Spain
+name: Trinidad and Tobago
+currencies: [code: TTD, name: Trinidad and Tobago dollar, symbol: $]
+
+Port Vila
+name: Vanuatu
+currencies: [code: VUV, name: Vanuatu vatu, symbol: Vt]
+
+Port-au-Prince
+name: Haiti
+currencies: [code: HTG, name: Haitian gourde, symbol: G]
+
+Porto-Novo
+name: Benin
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+Prague
+name: Czech Republic
+currencies: [code: CZK, name: Czech koruna, symbol: Kč]
+
+Praia
+name: Cabo Verde
+currencies: [code: CVE, name: Cape Verdean escudo, symbol: Esc]
+
+Pretoria
+name: South Africa
+currencies: [code: ZAR, name: South African rand, symbol: R]
+
+Pristina
+name: Republic of Kosovo
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Putrajaya
+Country not found
+
+Pyongyang
+name: Korea (Democratic People's Republic of)
+currencies: [code: KPW, name: North Korean won, symbol: ₩]
+
+Quito
+name: Ecuador
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+Rabat
+name: Morocco
+currencies: [code: MAD, name: Moroccan dirham, symbol: د.م.]
+
+Ramallah
+name: Palestine,  State of
+currencies: [code: ILS, name: Israeli new sheqel, symbol: ₪]
+
+Reykjavík
+name: Iceland
+currencies: [code: ISK, name: Icelandic króna, symbol: kr]
+
+Riga
+name: Latvia
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Riyadh
+name: Saudi Arabia
+currencies: [code: SAR, name: Saudi riyal, symbol: ر.س]
+
+Road Town
+name: Virgin Islands (British)
+currencies: [code: null, name: [D]
+
+Rome
+name: Holy See
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Roseau
+name: Dominica
+currencies: [code: XCD, name: East Caribbean dollar, symbol: $]
+
+Saipan
+name: Northern Mariana Islands
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+San José
+name: Costa Rica
+currencies: [code: CRC, name: Costa Rican colón, symbol: ₡]
+
+San Juan
+name: Puerto Rico
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+San Marino
+name: San Marino
+currencies: [code: EUR, name: Euro, symbol: €]
+
+San Salvador
+name: El Salvador
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+Sana'a
+name: Yemen
+currencies: [code: YER, name: Yemeni rial, symbol: ﷼]
+
+Santiago
+name: Chile
+currencies: [code: CLP, name: Chilean peso, symbol: $]
+
+Santo Domingo
+name: Dominican Republic
+currencies: [code: DOP, name: Dominican peso, symbol: $]
+
+São Tomé
+name: Sao Tome and Principe
+currencies: [code: STD, name: São Tomé and Príncipe dobra, symbol: Db]
+
+Sarajevo
+name: Bosnia and Herzegovina
+currencies: [code: BAM, name: Bosnia and Herzegovina convertible mark, symbol: null]
+
+Seoul
+name: Korea (Republic of)
+currencies: [code: KRW, name: South Korean won, symbol: ₩]
+
+Singapore
+name: Singapore
+currencies: [code: BND, name: Brunei dollar, symbol: $, code: SGD, name: Singapore dollar, symbol: $]
+
+Skopje
+name: Macedonia (the former Yugoslav Republic of)
+currencies: [code: MKD, name: Macedonian denar, symbol: ден]
+
+Sofia
+name: Bulgaria
+currencies: [code: BGN, name: Bulgarian lev, symbol: лв]
+
+Sri Jayawardenepura Kotte
+Country not found
+
+St. George's
+name: Grenada
+currencies: [code: XCD, name: East Caribbean dollar, symbol: $]
+
+St. Helier
+Country not found
+
+St. John's
+Country not found
+
+St. Peter Port
+name: Guernsey
+currencies: [code: GBP, name: British pound, symbol: £, code: (none), name: Guernsey pound, symbol: £]
+
+St. Pierre
+Country not found
+
+Stanley
+name: Falkland Islands (Malvinas)
+currencies: [code: FKP, name: Falkland Islands pound, symbol: £]
+
+Stepanakert
+Country not found
+
+Stockholm
+name: Sweden
+currencies: [code: SEK, name: Swedish krona, symbol: kr]
+
+Sucre
+name: Bolivia (Plurinational State of)
+currencies: [code: BOB, name: Bolivian boliviano, symbol: Bs.]
+
+Sukhumi
+Country not found
+
+Suva
+name: Fiji
+currencies: [code: FJD, name: Fijian dollar, symbol: $]
+
+Taipei
+name: Taiwan
+currencies: [code: TWD, name: New Taiwan dollar, symbol: $]
+
+Tallinn
+name: Estonia
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Tarawa
+name: Kiribati
+currencies: [code: AUD, name: Australian dollar, symbol: $, code: (none), name: Kiribati dollar, symbol: $]
+
+Tashkent
+name: Uzbekistan
+currencies: [code: UZS, name: Uzbekistani so'm, symbol: null]
+
+Tbilisi
+name: Georgia
+currencies: [code: GEL, name: Georgian Lari, symbol: ლ]
+
+Tegucigalpa
+name: Honduras
+currencies: [code: HNL, name: Honduran lempira, symbol: L]
+
+Tehran
+name: Iran (Islamic Republic of)
+currencies: [code: IRR, name: Iranian rial, symbol: ﷼]
+
+The Hague
+Country not found
+
+The Valley
+name: Anguilla
+currencies: [code: XCD, name: East Caribbean dollar, symbol: $]
+
+Thimphu
+name: Bhutan
+currencies: [code: BTN, name: Bhutanese ngultrum, symbol: Nu., code: INR, name: Indian rupee, symbol: ₹]
+
+Tifariti
+Country not found
+
+Tirana
+name: Albania
+currencies: [code: ALL, name: Albanian lek, symbol: L]
+
+Tokyo
+name: Japan
+currencies: [code: JPY, name: Japanese yen, symbol: ¥]
+
+Tórshavn
+name: Faroe Islands
+currencies: [code: DKK, name: Danish krone, symbol: kr, code: (none), name: Faroese króna, symbol: kr]
+
+Tripoli
+name: Libya
+currencies: [code: LYD, name: Libyan dinar, symbol: ل.د]
+
+Tskhinvali
+Country not found
+
+Tunis
+name: Tunisia
+currencies: [code: TND, name: Tunisian dinar, symbol: د.ت]
+
+Ulaanbaatar
+Country not found
+
+Vaduz
+name: Liechtenstein
+currencies: [code: CHF, name: Swiss franc, symbol: Fr]
+
+Valletta
+name: Malta
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Valparaíso
+Country not found
+
+Vatican City
+Country not found
+
+Victoria
+name: Hong Kong
+currencies: [code: HKD, name: Hong Kong dollar, symbol: $]
+
+Vienna
+name: Austria
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Vientiane
+name: Lao People's Democratic Republic
+currencies: [code: LAK, name: Lao kip, symbol: ₭]
+
+Vilnius
+name: Lithuania
+currencies: [code: EUR, name: Euro, symbol: €]
+
+Warsaw
+name: Poland
+currencies: [code: PLN, name: Polish złoty, symbol: zł]
+
+Washington,  D.C.
+name: United States of America
+currencies: [code: USD, name: United States dollar, symbol: $]
+
+Wellington
+name: New Zealand
+currencies: [code: NZD, name: New Zealand dollar, symbol: $]
+
+West Island
+name: Cocos (Keeling) Islands
+currencies: [code: AUD, name: Australian dollar, symbol: $]
+
+Willemstad
+name: Curaçao
+currencies: [code: ANG, name: Netherlands Antillean guilder, symbol: ƒ]
+
+Windhoek
+name: Namibia
+currencies: [code: NAD, name: Namibian dollar, symbol: $, code: ZAR, name: South African rand, symbol: R]
+
+Yamoussoukro
+name: Côte d'Ivoire
+currencies: [code: XOF, name: West African CFA franc, symbol: Fr]
+
+Yaoundé
+name: Cameroon
+currencies: [code: XAF, name: Central African CFA franc, symbol: Fr]
+
+Yaren
+name: Nauru
+currencies: [code: AUD, name: Australian dollar, symbol: $, code: (none), name: null, symbol: $]
+
+Yerevan
+name: Armenia
+currencies: [code: AMD, name: Armenian dram, symbol: null]
+
+Zagreb
+name: Croatia
+currencies: [code: HRK, name: Croatian kuna, symbol: kn]
+

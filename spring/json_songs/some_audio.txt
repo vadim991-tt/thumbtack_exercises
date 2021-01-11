@@ -1,0 +1,1 @@
+{"id":5,"artist":"artist","type":"AUDIO","name":"name","albumName":"album name","year":1999,"albumPictureLink":"https://site.com/album-picture.png","genre":"Rock","durationInSec":300,"linkToAudioFile":"json_songs/some_audio.txt"}

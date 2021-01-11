@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.thumbtack.school.database.mybatis.mappers.SchoolMapper">
+    <resultMap id="resultSchool" type="net.thumbtack.school.database.model.School">
+        <id property="id" column="id"/>
+        <result property="schoolName" column="schoolname"/>
+        <result property="year" column="year"/>
+        <collection property="groups" column="id" javaType="java.util.List"
+                    ofType="net.thumbtack.school.database.model.Group">
+            <result property="groupName" column="groupname"/>
+            <result property="id" column="groups_id"/>
+            <result property="roomName" column="roomname"/>
+            <collection property="trainees" column="id" javaType="java.util.List"
+                        ofType="net.thumbtack.school.database.model.Trainee">
+                <result property="id" column="author"/>
+                <result property="firstName" column="firstname"/>
+                <result property="lastName" column="lastName"/>
+            </collection>
+            <collection property="subjects" column="id" javaType="java.util.List"
+                        ofType="net.thumbtack.school.database.model.Subject">
+                <result property="id" column="subject_id"/>
+                <result property="subjectName" column="subjectname"/>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="getAllUsingJoin" resultMap="resultSchool">
+        SELECT school.id as id, schoolname, year, groups.id as groups_id, groupname, roomname, subject.id as subject_id,
+        subjectname,
+        trainee.id as trainee_id, firstname, lastname, rating FROM school
+        JOIN groups ON groups.schoolid = school.id
+        LEFT OUTER JOIN trainee ON trainee.groupsid = groups.id
+        LEFT OUTER JOIN subject_groups ON subject_groups.groupsid = groups.id
+        LEFT OUTER JOIN subject ON subjectid = subject.id;
+    </select>
+
+</mapper>
